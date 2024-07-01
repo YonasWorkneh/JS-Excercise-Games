@@ -55,11 +55,11 @@ const checkWin = function (playerChoice, computerChoice) {
     message.style.background = 'none';
   }
   //to end the game in a round of 10
-  if (playerCurrentScore === 10) {
+  if (playerCurrentScore === 3) {
     alert(`✨🎉Congrats!!! You defeated the computer✨🎉`);
     reset();
   }
-  else if (compCurrentScore === 10) {
+  else if (compCurrentScore === 3) {
     alert(`Computer Won.try again!!!`);
     reset();
   }
