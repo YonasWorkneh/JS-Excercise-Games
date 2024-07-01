@@ -26,14 +26,14 @@ const playerTwoTotal = document.querySelector('.score2');
 
 const checkWin = function () {
   console.log(`${playerOneTotal.textContent} ${playerTwoTotal.textContent}`);
-  if (Number(playerOneTotal.textContent) >= 100) {
+  if (Number(playerOneTotal.textContent) >= 50) {
     alert(`${nameI} Wins 🎉🎉`);
     //disabling the roll and hold btn when one player wins i.e players 
     //can only reset the game;
     rollBtn.setAttribute('Disabled',true);
     holdBtn.setAttribute('Disabled',true);
   }
-  else if (Number(playerTwoTotal.textContent) >= 100) {
+  else if (Number(playerTwoTotal.textContent) >= 50) {
     alert(`${nameII} Wins 🎉🎉`);
     rollBtn.setAttribute('Disabled',true);
     holdBtn.setAttribute('Disabled',true);
